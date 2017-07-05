@@ -3,7 +3,7 @@ import time
 import sys
 import yaml
 
-with open('coptions.yaml') as yf:
+with open('options.yaml') as yf:
     OP = yaml.load(yf.read())
 
 auth = tweepy.OAuthHandler(OP['consumer-key'], OP['consumer-secret'])
